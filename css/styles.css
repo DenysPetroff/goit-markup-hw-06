@@ -791,8 +791,36 @@ margin-bottom: 0;}
             font-size: 12px;
             letter-spacing: 0.04em;
             color: rgba(46, 47, 66, 0.4);
-            line-height: 117%;
+            line-height: 1.16;
     }
 
 
-    
+    .name-input-container {
+        position: relative;
+        
+    /* }
+    .name-svg {
+        position: absolute;
+         */
+        
+    }
+    .form-svg {
+        position: absolute;
+        fill: var(--modal-overlay-color);
+        left: 16px;
+
+    }
+    .name-input-container input {
+        display: block;
+        width: 100%;
+        }
+
+    .phone-input-container input {
+        display: block;
+        width: 100%;
+    }
+
+     .email-input-container input {
+         display: block;
+         width: 100%;
+     }

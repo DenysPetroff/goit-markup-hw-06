@@ -475,9 +475,9 @@
     <!-- MODAL -->
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
-        <h2 class="your-contacts-h2">
+        <b class="your-contacts-b">
           Leave your contacts and we will call you back
-        </h2>
+        </b>
         <button data-modal-close class="close-button">
           <svg class="close-x" width="8" height="8">
             <use href="./images/symbol-defs.svg#close-black-min"></use>
@@ -486,16 +486,31 @@
         <form class="form-modal">
           <div class="modal-form-field">
             <label for="name">Name</label>
-            <input type="name" name="name" id="name" />
+            <div class="name-input-container">
+              <svg class="name-svg form-svg" width="18px" height="18px">
+                <use href="./images/symbol-defs.svg#person-black-min"></use>
+              </svg>
+              <input type="name" name="name" id="name" />
+            </div>
           </div>
 
           <div class="modal-form-field">
             <label for="phone">Phone</label>
-            <input type="tel" name="phone" id="phone" />
+            <div class="phone-input-container">
+              <svg class="name-svg form-svg" width="18px" height="24px">
+                <use href="./images/symbol-defs.svg#phone-black-min"></use>
+              </svg>
+              <input type="tel" name="phone" id="phone" />
+            </div>
           </div>
           <div class="modal-form-field">
             <label for="email">Email</label>
-            <input type="email" name="email" id="email" />
+            <div class="email-input-container">
+              <svg class="name-svg form-svg" width="18px" height="24px">
+                <use href="./images/symbol-defs.svg#email-black-min"></use>
+              </svg>
+              <input type="email" name="email" id="email" />
+            </div>
           </div>
           <div class="modal-form-field">
             <label for="comment">Comment</label>
@@ -504,8 +519,7 @@
               id="comment"
               rows="8"
               placeholder="Text input"
-            >
-            </textarea>
+            ></textarea>
           </div>
           <div class="modal-form-field accept-form">
             <input
