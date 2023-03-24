@@ -453,18 +453,20 @@
               </li>
             </ul>
           </div>
-          <form>
-            <label for="subscribe">Subscribe</label>
-            <input
-              name="email"
-              type="email"
-              id="subscribe"
-              placeholder="E-mail"
-            />
+          <form class="form-footer-subscribe">
+            <div class="footer-subscribe-container">
+              <label for="subscribe" class="label-subscriber">Subscribe</label>
+              <input
+                class="footer-cubscr-input"
+                name="email"
+                type="email"
+                id="subscribe"
+                placeholder="E-mail"
+              />
+            </div>
 
             <button type="submit" class="subscribe-button-footer">
-              Subscribe
-              <svg width="24" height="24" class="svg-button-subscr">
+              Subscribe<svg width="24" height="24" class="svg-button-subscr">
                 <use href="./images/symbol-defs.svg#paper-plane-min"></use>
               </svg>
             </button>
@@ -485,31 +487,31 @@
         </button>
         <form class="form-modal">
           <div class="modal-form-field">
-            <label for="name">Name</label>
+            <label for="name" class="name-lable">Name</label>
             <div class="name-input-container">
+              <input type="name" class="name-input" name="name" id="name" />
               <svg class="name-svg form-svg" width="18px" height="18px">
                 <use href="./images/symbol-defs.svg#person-black-min"></use>
               </svg>
-              <input type="name" name="name" id="name" />
             </div>
           </div>
 
           <div class="modal-form-field">
             <label for="phone">Phone</label>
             <div class="phone-input-container">
-              <svg class="name-svg form-svg" width="18px" height="24px">
+              <input type="tel" class="phone-input" name="phone" id="phone" />
+              <svg class="phone-svg form-svg" width="18px" height="24px">
                 <use href="./images/symbol-defs.svg#phone-black-min"></use>
               </svg>
-              <input type="tel" name="phone" id="phone" />
             </div>
           </div>
           <div class="modal-form-field">
             <label for="email">Email</label>
             <div class="email-input-container">
-              <svg class="name-svg form-svg" width="18px" height="24px">
+              <input type="email" class="email-input" name="email" id="email" />
+              <svg class="email-svg form-svg" width="18px" height="24px">
                 <use href="./images/symbol-defs.svg#email-black-min"></use>
               </svg>
-              <input type="email" name="email" id="email" />
             </div>
           </div>
           <div class="modal-form-field">
@@ -521,16 +523,25 @@
               placeholder="Text input"
             ></textarea>
           </div>
-          <div class="modal-form-field accept-form">
-            <input
-              type="checkbox"
-              name="accept"
-              value="accept-on"
-              id="accept"
-            />
-            <label for="accept"
-              >I accept the terms and conditions of the Privacy Policy</label
-            >
+          <div class="accept-form">
+            <label>
+              <input
+                type="checkbox"
+                class="checkbox"
+                name="accept"
+                value="accept-on"
+              />
+              <svg class="checkbox-icon">
+                <use href="./images/symbol-defs.svg#checkbox"></use>
+              </svg>
+              <p>
+                I accept the terms and conditions of the
+                <a href="" class="Privacy">Privacy Policy</a>
+              </p>
+            </label>
+          </div>
+          <div class="button-center">
+            <button class="button-modal-form" type="submit">Send</button>
           </div>
         </form>
       </div>
