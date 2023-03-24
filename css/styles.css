@@ -774,9 +774,10 @@ margin-bottom: 0;}
     .close-button:hover,.close-button:focus .close-x {
               fill: var(--button-text-hover-color);
     }
-    .your-contacts-h2 {
+    .your-contacts-b {
+        display: block;
         margin-top: 0;
-        margin-bottom: 0;
+        margin-bottom: 16px;
         font-size: 16px;
         font-weight: 500;
         letter-spacing: 0.02em;
@@ -1004,7 +1005,6 @@ margin-bottom: 0;}
     }
      .checkbox:checked ~ .checkbox-icon {
         background-color: var(--primary-brand-button-color);
-        /* background-image: url('../images/chekbox-activ-min.svg'); */
         background-size: contain;
         background-origin: border-box;
         border-color: var(--primary-brand-button-color);
